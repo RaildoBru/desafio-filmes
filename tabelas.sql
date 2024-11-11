@@ -32,3 +32,9 @@ CREATE TABLE filmsCharacters (
 	foreign key (id_films) references films(id),
 	foreign key (id_characters) references characters(id)
 )
+
+CREATE TABLE log (
+    id int AUTO_INCREMENT PRIMARY KEY,
+    url VARCHAR(255) NOT NULL,
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
