@@ -1,14 +1,9 @@
 <?php
 require __DIR__ . '/controllers/ApiFilmsController.php';
+require __DIR__ . '/log/log.php';
 
 abstract class RouteSwitch
 {
-    protected function home()
-    {
-        return '???';
-        // /require __DIR__ . '/pages/home.html';
-    }
-
     protected function films($id = '')
     {
         $films = new ApiFilmsController;
@@ -25,6 +20,12 @@ abstract class RouteSwitch
         
         return $character->getcharacter($params);
         
+    }
+
+    protected function log()
+    {
+        $log = new log;
+        return $log->getlog();
     }
     
     public function __call($name, $arguments)
