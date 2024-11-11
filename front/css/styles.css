@@ -2,16 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black
+  }
+  p {
+    text-decoration-color : red;
+    color: gold;
   }
   
-  h1 {
+  h1,h2 {
     text-align: center;
     margin: 20px;
+    color: goldenrod;
   }
   
   ul {
     list-style-type: none;
-    padding: 0;
+    text-align: center;
   }
   
   li {
@@ -19,7 +25,7 @@ body {
   }
   
   a {
-    color: blue;
+    color: white;
     text-decoration: none;
   }
   
@@ -27,3 +33,10 @@ body {
     height: 10%;
     width: 10%;
   }
+
+ div{
+  margin-top: 5%;
+  margin-bottom: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+}

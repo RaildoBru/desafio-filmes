@@ -22,7 +22,7 @@ class FilmsCharactersModel extends Connection {
         $sql = "SELECT (`characters`.name) FROM {$this->films} 
         join {$this->filmsCharacters} on films.id = filmsCharacters.id_films
         JOIN  {$this->characters} on `characters`.id = filmsCharacters.id_characters
-        WHERE films.id = $id";
+        WHERE films.id = $id order by `characters`.id_character";
         $stmt = $this->connection->prepare($sql);
 
         try {

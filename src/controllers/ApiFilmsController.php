@@ -66,7 +66,6 @@ class ApiFilmsController{
         $request = new CurlRequest;
         $response = $request->exec($urlCharacters);
 
-
         unset(
             $response["homeworld"],
             $response["films"],
